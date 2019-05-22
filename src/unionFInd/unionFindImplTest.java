@@ -4,11 +4,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
-import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.*;
 class unionFindImplTest {
     static unionFindImpl union=null;
     @BeforeAll
