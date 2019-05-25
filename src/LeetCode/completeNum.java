@@ -24,8 +24,14 @@ public class completeNum {
             int t=size;
             size=0;
             if(first) {t=1;first=false;}
+            /***
+             * 上次bfs加入的一圈状态
+             */
             for(int i=0;i<t;i++){
                 int start=q.poll();
+                /***
+                 * 枚举状态
+                 */
                 for(int j=0;j<mi.size();j++){
                     int tmp=start-mi.get(j);
                     if(tmp==0) return cnt;
